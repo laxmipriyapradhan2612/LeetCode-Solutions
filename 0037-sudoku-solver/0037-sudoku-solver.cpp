@@ -42,7 +42,7 @@ public:
         }
         //place the digit
     
-        for(int dig='1'; dig<='9'; dig++){
+        for(char dig='1'; dig<='9'; dig++){
             if(isSafe(board, row, col, dig)){
                 board[row][col]= dig;
                 if(helper(board, nextRow, nextCol)){
